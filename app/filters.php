@@ -44,6 +44,13 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+//If Username URI Wildcard does not match currently logged in user, redirect to login.
+Route::filter('authmatch', function($username)
+{
+	if (Route::input('username') != Auth::user()->username) return Redirect::guest('login');
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter
@@ -78,3 +85,4 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+

@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '108.168.242.149',
-			'database'  => 'kefile',
-			'username'  => 'kobrien15',
-			'password'  => '0530Royals-1985',
+			'host'      => 'localhost',
+			'database'  => 'oldkefile',
+			'username'  => 'homestead',
+			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

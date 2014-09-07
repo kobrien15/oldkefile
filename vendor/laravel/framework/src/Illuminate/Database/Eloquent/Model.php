@@ -1,6 +1,5 @@
 <?php namespace Illuminate\Database\Eloquent;
 
-use Closure;
 use DateTime;
 use ArrayAccess;
 use Carbon\Carbon;
@@ -1709,7 +1708,7 @@ abstract class Model implements ArrayAccess, ArrayableInterface, JsonableInterfa
 	 * @param  array   $attributes
 	 * @param  string  $table
 	 * @param  bool    $exists
-	 * @return \Illuminate\Database\Eloquent\Relation\Pivot
+	 * @return \Illuminate\Database\Eloquent\Relations\Pivot
 	 */
 	public function newPivot(Model $parent, array $attributes, $table, $exists)
 	{
